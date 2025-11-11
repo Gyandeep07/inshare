@@ -5,7 +5,8 @@
   "license": "MIT",
   "scripts": {
     "dev": "nodemon server.js",
-    "serve": "node server.js"
+    "serve": "node server.js",
+    "build": "echo 'no build step required'"
   },
   "dependencies": {
     "cors": "^2.8.5",
