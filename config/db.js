@@ -3,15 +3,12 @@ const mongoose = require('mongoose');
 
 function connectDB() {
   mongoose
-    .connect(process.env.MONGO_CONNECTION_URL, {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-    })
+    .connect(process.env.MONGO_CONNECTION_URL)
     .then(() => {
-      console.log('Database connected 🥳🥳🥳🥳');
+      console.log('✅ Database connected successfully!');
     })
     .catch((err) => {
-      console.error('Connection failed ☹️☹️☹️☹️', err);
+      console.error('❌ Database connection failed:', err.message);
     });
 }
 
