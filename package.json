@@ -1,12 +1,11 @@
 {
   "name": "inshare",
   "version": "1.0.0",
-  "main": "server.js",
+  "main": "index.js",
   "license": "MIT",
   "scripts": {
     "dev": "nodemon server.js",
-    "serve": "node server.js",
-    "build": "echo 'no build step required'"
+    "serve": "node server.js"
   },
   "dependencies": {
     "cors": "^2.8.5",
